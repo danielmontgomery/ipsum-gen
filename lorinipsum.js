@@ -9,7 +9,7 @@
 function runIt(){
 	    var paragraphNum = document.getElementById("myBtn").value;
 		console.log(paragraphNum);
-	var sentenceGroup = '<br><br>';	
+	var sentenceGroup = '<br>';	
 	var sentLength = function(){
 	    return(Math.floor(Math.random() * 10));
 	}
@@ -35,16 +35,10 @@ function runIt(){
 		}  
 		console.log(sentenceGroup);
 		paragraph+= ("<p>" + sentenceGroup + "</p>");
+		sentenceGroup = '<br>';
 	}
 	printer.innerHTML = paragraph;
 	// printer.innerHTML = paragraph;
 }
 
-runIt
-
-// =======================================
-// More logic on how to build paragraphs:
-
-// Run the paragraph generator loop for the number of paragraphs the user wants. 
-// Add a <br> to the end of each paragraph. 
-// =======================================
+runIt();
