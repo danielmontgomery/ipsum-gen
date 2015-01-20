@@ -1,7 +1,7 @@
 body {
 	margin: 0px auto;
 	background-color: #351330;
-	font-family: DIN, Helvetica, Arial, sans-serif;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
 #wrapper {
 
@@ -36,6 +36,7 @@ body {
 	background-color: #E8CAA4;
 	display: inline-block;
 	padding: 0px 10px;
+	font-weight: 900;
 }
 #output {
 	min-height: 300px;
