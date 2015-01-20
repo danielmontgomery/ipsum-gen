@@ -4,9 +4,10 @@ function runIt(){
 	    var paragraphNum = document.getElementById("myBtn").value;
 		console.log(paragraphNum);
 	var sentenceGroup = '<br>';	
-	var sentLength = function(){
-	    return(Math.floor(Math.random() * 10));
-	}
+	// var sentLength = function(){
+	//     return(Math.floor(Math.random() * 10));
+	// }
+	var sentLength = Math.floor((Math.random() * (10-5)) + 5);
 	var paragraph = '';
 	var sentence;
 	var sentenceCapped;
@@ -19,7 +20,7 @@ function runIt(){
 			for(var i = 0; i < wordsArray.length; i++){
 				var randomNum = Math.floor(Math.random() * wordsArray.length);
 				wordsArray[randomNum] = wordsArray[i];
-				sentence = wordsArray.slice(0, sentLength()).toString().replace(/,/g, ' ') + '. ';
+				sentence = wordsArray.slice(0, sentLength).toString().replace(/,/g, ' ') + '. ';
 				sentenceCapped = sentence.charAt(0).toUpperCase() + sentence.slice(1);
 			}
 			sentenceGroup+=sentenceCapped;
