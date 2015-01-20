@@ -2,17 +2,22 @@ body {
 	margin: 0px auto;
 	background-color: #d7d7d7;
 }
+#wrapper {
+
+}
 #container {
 	width: 960px;
 	margin: 0px auto;
 	padding-top: 50px;
 	text-align: left;
+	border: 1px solid black;
 }
 #paragraphs {
 	border: 1px solid black;
 }
 #inputForm {
 	width: 400px;
+	height: ;
 	text-align: center;
 	border: 1px solid black;
 	border-radius: 25px;
